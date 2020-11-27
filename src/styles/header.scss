@@ -1,0 +1,228 @@
+
+.header {
+    width: 100%;
+    background-color: #005ED0;
+    background-image: url('../assets/background.png');
+    z-index: 2;
+    box-shadow: inset 10px -13px 30px rgba(51, 51, 51, 0.15);
+
+    &__burger {
+        z-index: 3;
+        position: absolute;
+        right: 15px;
+        width: 30px;
+        height: 20px;
+        margin: 0px auto;
+        &:before, span, &:after {
+            content: '';
+            background-color: #ffffff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            border-radius: 0.5px;
+        }
+        &:after {
+            bottom: 0;
+        }
+        span { 
+            top: 9px;
+        }
+        &:before {
+            top: 0; 
+        }
+    }
+    
+    &__burger.active {
+        &:before{
+            transform: rotate(45deg);
+           top: 9px; 
+        }
+        &:after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+        span{
+            transform: scale(0);
+        }
+    } 
+    
+    &__logo--img{
+        position: absolute;
+        left: 0;
+    }
+    
+    &__link, 
+    &__link.btn {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    &__body {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        height: 525px;
+    }
+    
+    &__item {
+        list-style: none;
+    }
+    &__title{
+        position: relative;
+        align-items: center;
+        text-align: center;
+        font-style: normal;
+        color: #FFFFFF;
+        padding-top: 60px;
+        z-index: 0;
+    }
+  &__slogan{
+    font-size: 28px;
+    line-height: 36px;
+    display: flex; 
+    justify-content: space-around;
+    font-weight: bold;
+  }  
+  &__term{
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.7;
+    display: flex;
+    padding-top: 20px;
+    font-weight: normal;
+  }
+  &__enter{
+    padding-top: 26px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center; 
+    color: #FFFFFF;
+        &--link{
+           text-decoration: none;
+            color: #FF6100;
+        }
+    }
+    &__block{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.header__menu.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 440px;
+    background-color: #005ED0;
+    background-image: url('../assets/background.png');
+    z-index: 3;
+    .header__item {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 0px 0px 80px 0px;
+        z-index: 4;
+    }
+    .header__item--logo{
+        margin: 0px !important;
+    }
+    .header__item--padding {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:768px) {
+    .header__menu {
+        .header__item--hidden {
+            display: none;
+        }
+      
+    }
+}
+@media (min-width:768px) {
+    .header__menu {
+        .header__list {
+            display:flex;
+            justify-content: flex-end;
+            margin: 0px auto;
+            align-items: center;
+            .header__item {
+                margin: 0px 0px 0px 40px;
+            }
+            .header__item--logo {
+                margin: 0px;
+            }
+        }
+    }
+}
+@media (min-width:768px) {
+    .header__burger{
+        display: none;
+    }
+}
+@media (min-width:768px) {
+.header__title{
+        align-items: center;
+        text-align: center;
+        margin-top: auto;
+        padding-top: 40px;
+    }
+.header__slogan{
+    font-size: 36px;
+    line-height: 47px;
+    display: block;
+  }  
+.header__term{
+    display: block;
+  }
+.header__enter{
+    font-size: 15px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center; 
+    }
+}
+@media (min-width:992px) {
+    .header__title{
+            align-items: left;
+            text-align: left;
+            margin-top: auto;
+            padding-top: 40px;
+        }
+    .header__slogan{
+        font-size: 48px;
+        line-height: 62px;
+        display: block;
+      }  
+    .header__term{
+        display: block;
+      }
+    .header__enter{
+        font-size: 15px;
+        line-height: 19px;
+        align-items: left;
+        text-align: left; 
+        }
+    }
+@media (min-width:576px) {
+    .header__body {
+        height: 673px;
+    }
+}
+@media (min-width:768px) {
+    .header__body {
+        height: 772px;
+    }
+}

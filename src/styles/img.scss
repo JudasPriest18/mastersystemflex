@@ -1,0 +1,30 @@
+.header__img--table {
+    display: none;
+
+}
+.content__img {
+    padding-top: 50px;
+    width: 35px;
+    height: 35px;
+
+  }
+@media (min-width:992px) {
+    .header__img--table{
+        display: flex;
+        width: 496px;
+        height: 373px;
+    }
+    @media (min-width:1200px) {
+        .header__img--table{
+            display: flex;
+            width: 680px;
+            height: 498px;
+        }
+    }  
+} 
+@media (min-width:576px) {
+.content__img {
+    width: 70px;
+    height: 70px;
+  }
+}

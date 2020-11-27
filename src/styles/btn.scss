@@ -1,0 +1,47 @@
+.btn{
+    border: none;
+    outline: none;
+    background: #005ED0;
+    z-index: 3 !important;
+    cursor: pointer;
+}
+.header__link.btn {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 6px 28px;
+    z-index: 3;
+}
+.btn--input {
+    background: #FF6100;
+    box-shadow: 0px 2px 10px rgba(255, 97, 0, 0.2);
+    border-radius: 0px 8px 8px 0px;
+    width: 140px;
+    height: 40px;
+    border: 0;
+}
+.header__btn--input {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 9px 11px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@media (min-width:576px) {
+    .btn--input {
+        width: 191px;
+        height: 48px;
+    }
+}   
+@media (min-width:576px) {
+    .header__btn--input {
+        font-size: 15px;
+        line-height: 19px;
+    }
+}   

@@ -1,0 +1,23 @@
+.header__input {
+    display: flex;
+    padding-top: 26px;
+     
+}
+.header__form-control {
+    background: #FFFFFF;
+    border-radius: 8px 0px 0px 8px;
+    width: 150px;
+    height: 40px;
+    border: 0;
+}
+@media (min-width:576px) {
+    .header__form-control{
+        width: 276px;
+        height: 48px;
+    }
+} 
+@media (max-width:992px) {
+    .header__input{
+        justify-content: center;
+    }
+}  
